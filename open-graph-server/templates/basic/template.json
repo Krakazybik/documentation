@@ -1,0 +1,16 @@
+{
+  "image": "preview.png",
+  "font": "LicensePlate.ttf",
+  "layout": [
+    {
+      "name": "title",
+      "top": 10,
+      "left": 10
+    },
+    {
+      "name": "description",
+      "top": 10,
+      "left": 10
+    }
+  ]
+}

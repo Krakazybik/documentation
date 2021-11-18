@@ -1,0 +1,35 @@
+{
+  "name": "open-graph-server",
+  "version": "1.0.0",
+  "description": "Open Graph dynamic image generator server",
+  "main": "dist/server.js",
+  "scripts": {
+    "server:prestart": "npm run build",
+    "server:build": "tsc",
+    "server:start": "node .",
+    "server:watch": "ts-node-dev --respawn --transpile-only src/app/server.ts"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^10.0.0",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "log4js": "^6.3.0",
+    "morgan": "~1.9.1",
+    "sharp": "^0.29.3",
+    "text-to-svg": "^3.1.5"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.8",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "eslint": "^8.2.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.4.1",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.2"
+  }
+}
